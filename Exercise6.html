@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label><input type="number" id="input1" placeholder="a"></label>
+    <label><input type="number" id="input2" placeholder="b"></label>
+    <button type="button" id="button">Giải phương trình bậc 2</button>
+    <div id="result"></div>
+    <script>
+        function Remain() {
+            let a = parseInt(document.getElementById("input1").value);
+            let b = parseInt(document.getElementById("input2").value);
+            let result = document.getElementById("result");
+            let an = (-b/a);
+            result.innerHTML = `Phương trình ${a}x + ${b} = 0 có nghiệm là x = ${an}`;
+        }
+        document.getElementById("button").addEventListener("click", Remain);
+    </script>
+</body>
+</html>

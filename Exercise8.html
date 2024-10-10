@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 8</title>
+</head>
+<body>
+    <label><input type="number" id="input1" placeholder="Nhập số"></label>
+    <button type="button" id="button">Kiểm tra</button>
+    <div id="result"></div>
+    <script>
+        function Remain() {
+            let a = parseInt(document.getElementById("input1").value)
+            let result = document.getElementById("result");
+            
+            if(a > 120 || a < 0)
+                result.innerHTML = "Không phải là số tuổi của người"
+            else
+                result.innerHTML = "Là số tuổi của người"
+        }
+        document.getElementById("button").addEventListener("click", Remain);
+    </script>
+</body>
+</html>
